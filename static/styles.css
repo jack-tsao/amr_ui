@@ -1,0 +1,82 @@
+/* Animated gradient title used in the main header */
+.title-glow {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+    text-align: left;
+    background: linear-gradient(90deg, #a855f7, #ec4899, #a855f7);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s linear infinite;
+    letter-spacing: 1px;
+}
+
+@keyframes shine {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Sidebar radio layout */
+[data-testid="stSidebar"] div[role="radiogroup"] > label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 0.5rem;
+}
+
+[data-testid="stSidebar"] div[role="radiogroup"] > label[data-selected="true"] {
+    font-weight: bold;
+}
+
+/* Expander summary styling */
+details > summary {
+    background-color: #1e4438 !important;
+    color: white !important;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Health status strip */
+.health-strip {
+    display: flex;
+    gap: 12px;
+    padding: 8px 14px;
+    margin-bottom: 10px;
+    background-color: #1b1b1b;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: 'Segoe UI', sans-serif;
+    flex-wrap: wrap;
+}
+
+.health-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: #262626;
+}
+
+.health-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.health-dot.ok     { background-color: #28a745; box-shadow: 0 0 6px #28a74566; }
+.health-dot.warn   { background-color: #f0ad4e; box-shadow: 0 0 6px #f0ad4e66; }
+.health-dot.fail   { background-color: #dc3545; box-shadow: 0 0 6px #dc354566; }
+
+.health-label { color: #ddd; }

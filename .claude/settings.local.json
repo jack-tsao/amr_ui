@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /home/amr/Desktop/robot_code/ros2_openvino_toolkit/script/archive)",
+      "Bash(mv /home/amr/Desktop/robot_code/ros2_openvino_toolkit/script/streamlit_all.py /home/amr/Desktop/robot_code/ros2_openvino_toolkit/script/streamlit_app_robot.py /home/amr/Desktop/robot_code/ros2_openvino_toolkit/script/streamlit_control.py /home/amr/Desktop/robot_code/ros2_openvino_toolkit/script/streamlit_distance.py /home/amr/Desktop/robot_code/ros2_openvino_toolkit/script/streamlit_distance_copy.py /home/amr/Desktop/robot_code/ros2_openvino_toolkit/script/archive/)",
+      "Bash(python3 -c ':*)",
+      "Bash(python3 amr_ui/locales/extract_locales.py)",
+      "Bash(rm amr_ui/locales/extract_locales.py)"
+    ]
+  }
+}
