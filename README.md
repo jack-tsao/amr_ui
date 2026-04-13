@@ -24,7 +24,7 @@ be worked on without touching the rest.
 
 ---
 
-## ⚠️ Watch the tutorial videos first
+## ⚠️ Watch the tutorial videos on the robot first
 
 Two walkthrough videos sit next to this README:
 
@@ -33,6 +33,8 @@ Two walkthrough videos sit next to this README:
   UI, or when you need to debug what the UI is doing under the hood.
 - **`AMR demo English　George.mp4`**, the **UI walkthrough** in English,
   covering the same flow driven through this application.
+
+  they live in /home/amr/Desktop/robot_code/ros2_openvino_toolkit/script/amr_ui/
 
 If you don't want to use this Streamlit app at all, that's fine: follow
 `AMR Tutorial.mp4` and run each command directly in a terminal. The UI is
