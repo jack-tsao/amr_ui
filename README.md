@@ -38,14 +38,6 @@ If you don't want to use this Streamlit app at all, that's fine: follow
 `AMR Tutorial.mp4` and run each command directly in a terminal. The UI is
 just a convenience layer over those same commands.
 
-**Please watch both before touching anything, and mimic every step exactly as
-shown.** The videos cover hardware quirks, launch order, and recovery steps
-that aren't written down anywhere else. If the UI behaves unexpectedly,
-re-watch the relevant section before escalating, almost every answer is in
-the video.
-
-The `.mp4` files are too large for git and are listed in `.gitignore`, they
-stay on the robot as local reference material.
 
 ---
 
@@ -64,12 +56,6 @@ Streamlit prints a local URL (usually <http://localhost:8501>), open it in
 a browser.
 
 ### When do I need to source ROS2?
-
-**Not on every new terminal.** Sourcing is only required when:
-
-- A ROS message definition has changed and the `adv_msgs` / `edge-data-client`
-  workspaces were rebuilt.
-- You just opened a completely fresh shell without the `.bashrc` env.
 
 If you're reusing the same terminal you started the robot from, you're already
 sourced. When you do need to re-source, run:
